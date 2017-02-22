@@ -2,6 +2,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src='https://cdn.firebase.com/js/client/1.1.1/firebase.js'></script>
+        <script src='js/connect_Firebase.js'></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
         <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" > 

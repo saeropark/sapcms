@@ -10,7 +10,8 @@
       
     </head>
     <body>
-        <?php include'header.php'?> 
+        <?php include'header.php';
+         session_start();?> 
         <div class="col-sm-offset-1 col-sm-12">
             <div class="col-sm-offset-1">
               <h1>Event Detail</h1>
@@ -22,7 +23,7 @@
             
             <div class="container">
               <div class="col-sm-8">
-                  <h3 class="col-sm-8" id="eventHeading">Event Title</h3>
+                  <h3 class="col-sm-8" id="eventHeading" value="">Event Title</h3>
               </div>
               <div class="col-sm-8">
                   <span class="glyphicon glyphicon-calendar col-sm-1" style="font-size: 150%;"></span>
