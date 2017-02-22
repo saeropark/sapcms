@@ -4,17 +4,6 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
-        <!-- FIREBASE SECTION -->
-        <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase-auth.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase-database.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase-messaging.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
-<!--        <script src="js/connect_Firebase.js"></script>-->
-        
-        <!-- END OF FIREBASE SECTION -->
-        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
         <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" > 
@@ -24,8 +13,7 @@
     <body>
         <?php include 'header.php';
          session_start();
-         
-        ?>
+         ?>
    
        <div class="col-lg-offset-2 col-lg-10">
            <h1>Post an Event</h1>
@@ -34,7 +22,6 @@
         
           <form class="form-horizontal col-lg-8 " action="announcement-process.php"  method="post">
 
-            
           <!--Post Type: Announcement, Event, Promotion-->
           <div class="form-group">
               <label for="postTypeOption" class="col-sm-2 control-label">Post Type</label>
