@@ -40,8 +40,6 @@
               <button type="submit" class="btn btn-default">Sign in</button>
             </div>
           </div>
-           
-            <a href="./addAnnouncement.php">Announcement Page</a>
         </form>
         
     </body>
