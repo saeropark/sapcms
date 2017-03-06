@@ -1,6 +1,7 @@
 <?php
-  $key = '';
-  
+//receive data from home.php 
+$key = '';
+ 
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
    if (isset($_POST['eventDetail'])) {
      $key = $_POST['eventDetail'];
@@ -27,6 +28,7 @@
             var key = "<?php echo $key; ?>";
             console.log(key);
             
+            //get indiv fields
             var titles = events[key].title;
             var dates = events[key].date;
             var time = events[key].time;
@@ -34,7 +36,7 @@
             var description = events[key].description;
             console.log(titles, dates, time, location, description, key);
               
-             
+             //write to html
             document.getElementById('eventHeading').innerHTML = titles;
             document.getElementById('date').innerHTML = dates;
             document.getElementById('time').innerHTML = time;

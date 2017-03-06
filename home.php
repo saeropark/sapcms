@@ -15,17 +15,19 @@
           
           function gotData(data) {
             var events = data.val();
+            
             //call events based on keys and store as an object
             var keys = Object.keys(events);
             console.log(keys);
             var list = "";
             for (var i = 0; i < keys.length; i++) {
-              var key = keys[i];
+              var key = keys[i]; 
               var titles = events[key].title;
               var dates = events[key].date;
               var types = events[key].postType;
               console.log(titles, dates, types, key);
               
+              //loop data to display
               var divHtml = '<div class="col-sm-6 col-md-3">' + 
                 '<div class="thumbnail">' +
                 '<img id="imgThumbnail" src="images/screen.png" alt="...">' +
@@ -44,6 +46,7 @@
               
               list += divHtml;
             }
+            //write to list
             document.getElementById('perListing').innerHTML = list;
           };
           
@@ -65,19 +68,3 @@
     </body>
     
 </html>
-
-
-              
-<!--              <div class="col-sm-6 col-md-3">
-              <div class="thumbnail">
-              <img id="imgThumbnail" src="images/screen.png" alt="...">
-              <div class="caption">
-                <h3 id="annTitle">Thumbnail label</h3>
-                Date: <p id="annDate"></p>
-                Post Type: <p id="annType"></p>
-                <p><a href="./announcementDetail.php" class="btn btn-primary" role="button">View</a> <a href="#" class="btn btn-default" role="button">Delete</a></p>
-              </div>
-            </div>
-          </div>
-          </div> -->
-          

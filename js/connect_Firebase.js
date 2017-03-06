@@ -2,8 +2,9 @@
  * Set-up firebase details
  */
 
-//function setup() {
 
+//do not edit any fields.
+//keys needed to start firebase
 var config = {
     apiKey: "AIzaSyDCB-XYhPG5_tps1ZPR4lMLs0p1X_uPGpQ",
     authDomain: "asap-c4472.firebaseapp.com",
@@ -13,4 +14,3 @@ var config = {
     };  
 
 firebase.initializeApp(config);
-//};
